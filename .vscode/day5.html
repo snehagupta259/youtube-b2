@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body onload="">
+
+    <h2 id="heading">Javascript examples</h2>
+    <input id="userinput" placeholder="Your Name">
+    <!-- <input onkeydown ="myfunction2()">   -->
+    <button onclick="myfunction3()">Click Me!</button>
+     <!-- This is html comment-->
+    <script>
+        // Define javascript here.
+        function myfunction3(){
+        let name=document.getElementById("userinput").value;
+        console.log("Selected value",name)
+
+        if(name.length<3){
+            alert("ERROR: Name cannot be less than 3")
+        } else if(name.length>10){
+            alert("ERROR: Name length cannot be greater than 10")
+        } else{
+            //only numeric values allowed
+            for(let i=0; i<name.length;i=i+1){
+                let digit=parseInt(name[i]);
+                if(isNaN(digit)){
+                    alert("Text should only have numbers");
+                }else{
+                    console.log("Looks good")
+                }
+            }
+            console.log("Validation complete")
+        }
+        // alert("Welcome" + name)
+
+        let header=document.getElementById("heading");
+        header.innerHTML = "Welcome" + name;
+        }
+
+
+        function myfunction2(){
+            console.log("second function!@@")
+        }
+        function myfunction(){
+        //function body
+        //alert("Javascript function!!!")
+        let name=prompt("Enter your name.")
+        console.log("Name is:", name)
+        let myvar=confirm("Are you sure?")
+        console.log("Value in myvar is:")
+        console.log(myvar)
+    }
+    </script>
+    
+</body>
+</html>

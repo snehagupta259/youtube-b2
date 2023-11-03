@@ -1,0 +1,53 @@
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+  }
+
+  .logo {
+    max-width: 100px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  /* .logo img {
+    max-width: 100%;
+  } */
+
+  .name {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px; 
+    font-size: 24px; 
+    font-weight: bold;
+    color: black; 
+  }
+  .table,tr,th{
+    border: 1px;solid white;
+    width:600px;
+  }
+
+  
+  .tr,th{
+    background-color: rgb(254, 122, 73);
+    color:white;
+    text-align: center;
+    width:600px;
+  }
+  .tr,td{
+    background-color:rgb(219, 218, 218);
+    text-align:center;
+  }
+  .name1{
+    display:inline-block;
+    vertical-align:middle;
+    font-size:15px;
+    background-color:rgb(254, 122, 73);
+    border-radius: 2px;
+    justify-content: center;
+    width:200px;
+    height:20px;
+    align-self: center;
+    color:white;
+  }
